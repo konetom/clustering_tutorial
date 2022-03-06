@@ -83,9 +83,9 @@ def calculating_clusters(outp, data, cols, metrics, methods):
                     for cluster in clusters:
                         index = np.where(result == cluster)
                         if cluster_n > 10:
-                            plt.scatter(train_data[index, 1], train_data[index, 0], color=['k'], alpha=.5)
+                            plt.scatter(train_data[index, 1], train_data[index, 0], s=400, color=['k'], alpha=.5)
                         else:
-                            plt.scatter(train_data[index, 1], train_data[index, 0])
+                            plt.scatter(train_data[index, 1], train_data[index, 0], s=400)
                         plt.xlabel(method)
                         plt.ylabel(metric)
                         for e, label in enumerate(cols):
