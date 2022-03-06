@@ -113,7 +113,7 @@ if file is not None:
     if len(metrics) == 0 or len(methods) == 0:
         l.write("Select distance metric(s) and clustering method(s).")
     else:
-        enlarge = lm.radio("\nPlot size (default: 4)", options=list(range(2, 11, 2)), index=1)
+        enlarge = lm.radio("\nPlot size (default: 6)", options=[2, 6, 10], index=1)
         dp = rm.radio("\nPlot quality (default: 70)", options=[50, 70, 100, 120], index=1)
         r.write("Press Refresh each time the parameters change.")
         if r.button("Refresh"):
